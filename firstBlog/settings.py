@@ -36,6 +36,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admindocs',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -58,7 +59,7 @@ WSGI_APPLICATION = 'firstBlog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'firstBlog',
+        'NAME': 'firstblog',
         'USER': 'ML',
         'PASSWORD': '',
         'HOST': '127.0.0.1',

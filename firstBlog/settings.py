@@ -30,13 +30,15 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.admin',
     'django.contrib.admindocs',
+    'blog',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -61,9 +63,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'firstblog',
         'USER': 'ML',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
+        'PASSWORD': 'its4realz',
+        'HOST': '',
+        'PORT': '',
     }
 }
 

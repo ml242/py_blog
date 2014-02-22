@@ -4,9 +4,9 @@ from django.core.urlresolvers import reverse
 # Create your models here.
 
 class Post(models.Model):
-  author = models.Charfield(max_length = 30)
+  author = models.TextField(max_length = 30)
   slug = models.SlugField(unique=True, max_length=255)
-  title = models.Charfield(max_length = 100)
+  title = models.TextField(max_length = 100)
   bodytext = models.TextField()
   timestamp = models.DateTimeField()
   description = models.CharField(max_length=255)
